@@ -1,0 +1,38 @@
+---
+layout: home
+
+hero:
+  name: Palexplorer
+  text: Encrypted P2P File Sharing
+  tagline: Share files directly between devices. No cloud. No servers. No tracking. End-to-end encrypted by default.
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /guide/getting-started
+    - theme: alt
+      text: Download
+      link: https://palexplorer.com/download
+    - theme: alt
+      text: CLI Reference
+      link: /cli/
+
+features:
+  - icon: 🔒
+    title: End-to-End Encrypted
+    details: XChaCha20-Poly1305 encryption on all shared content. Ed25519 identity keys. Zero-knowledge architecture.
+  - icon: 🌐
+    title: Peer-to-Peer
+    details: Files transfer directly between devices via BitTorrent, DHT, mDNS, and WebRTC. No cloud storage, no middlemen.
+  - icon: 🧩
+    title: Extensible
+    details: 30+ extensions for sync, chat, discovery, VFS, streaming, and more. Build your own with the Extension API.
+  - icon: 💻
+    title: Cross-Platform
+    details: Desktop app (Windows, macOS, Linux), CLI tool, web dashboard, and mobile app. Works on LAN and WAN.
+  - icon: 🔑
+    title: Self-Sovereign Identity
+    details: Your identity is an Ed25519 keypair derived from a 24-word mnemonic. No accounts, no servers, no sign-up.
+  - icon: 📡
+    title: Works Offline
+    details: Core features work without internet. LAN sharing via mDNS, local sync, encrypted chat between nearby devices.
+---
