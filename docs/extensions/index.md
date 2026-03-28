@@ -40,7 +40,7 @@ Palexplorer's core is intentionally minimal — identity, shares, encryption, an
 ## Enable an Extension
 
 ```bash
-pe ext enable @palexplorer/sync
+pal ext enable @palexplorer/sync
 ```
 
 Or go to **Settings > Extensions** in the desktop app.
@@ -50,7 +50,7 @@ Or go to **Settings > Extensions** in the desktop app.
 Create custom extensions with the Extension API:
 
 ```bash
-pe ext create my-extension
+pal ext create my-extension
 ```
 
 See [Build Your Own Extension](/extensions/build-your-own) for the full guide.
@@ -60,7 +60,7 @@ See [Build Your Own Extension](/extensions/build-your-own) for the full guide.
 Browse, install, and publish extensions:
 
 ```bash
-pe ext search "webhook"
-pe ext install-remote webhook-notifier
-pe ext publish ./my-extension
+pal ext search "webhook"
+pal ext install-remote webhook-notifier
+pal ext publish ./my-extension
 ```

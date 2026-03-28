@@ -4,15 +4,15 @@ Publish your extension to the Palexplorer Marketplace.
 
 ## Prerequisites
 
-1. A Palexplorer identity (`pe init`)
-2. An API key (`pe api-keys generate`)
+1. A Palexplorer identity (`pal init`)
+2. An API key (`pal api-keys generate`)
 
 ## Step 1: Sign Your Extension
 
 Sign with your Ed25519 identity key:
 
 ```bash
-pe ext sign ./my-extension
+pal ext sign ./my-extension
 ```
 
 This creates `extension.sig` — a detached Ed25519 signature over the manifest and entry point.
@@ -20,7 +20,7 @@ This creates `extension.sig` — a detached Ed25519 signature over the manifest 
 ## Step 2: Publish
 
 ```bash
-pe ext publish ./my-extension
+pal ext publish ./my-extension
 ```
 
 The extension is bundled as `.tar.gz` and uploaded to the Marketplace.
@@ -38,8 +38,8 @@ Set the `tier` field in your manifest:
 ### Track Earnings
 
 ```bash
-pe ext earnings
-pe ext my-extensions
+pal ext earnings
+pal ext my-extensions
 ```
 
 ## Updates
@@ -47,13 +47,13 @@ pe ext my-extensions
 To update a published extension:
 
 1. Bump the `version` in `extension.json`
-2. Re-sign: `pe ext sign ./my-extension`
-3. Re-publish: `pe ext publish ./my-extension`
+2. Re-sign: `pal ext sign ./my-extension`
+3. Re-publish: `pal ext publish ./my-extension`
 
 ## Marketplace Commands
 
 ```bash
-pe ext search "webhook"           # Search extensions
-pe ext install-remote webhook-notifier  # Install from Marketplace
-pe ext buy premium-extension      # Purchase paid extension
+pal ext search "webhook"           # Search extensions
+pal ext install-remote webhook-notifier  # Install from Marketplace
+pal ext buy premium-extension      # Purchase paid extension
 ```

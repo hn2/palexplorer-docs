@@ -1,6 +1,6 @@
 # CLI Reference
 
-The `pe` command-line tool provides 100+ commands for managing shares, transfers, pals, sync, and more.
+The `pal` command-line tool provides 100+ commands for managing shares, transfers, pals, sync, and more.
 
 ## Installation
 
@@ -30,7 +30,7 @@ Requires Node.js 20+. Also included with the desktop app.
 ## Global Flags
 
 ```bash
-pe --help          # Show help
-pe --version       # Show version
-pe <command> -h    # Command-specific help
+pal --help          # Show help
+pal --version       # Show version
+pal <command> -h    # Command-specific help
 ```

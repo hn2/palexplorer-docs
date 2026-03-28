@@ -1,53 +1,53 @@
 # Network & Discovery Commands
 
-## pe connect / disconnect
+## pal connect / disconnect
 
 ```bash
-pe connect       # Connect to discovery network
-pe disconnect    # Go offline
+pal connect       # Connect to discovery network
+pal disconnect    # Go offline
 ```
 
-## pe status
+## pal status
 
 Show connection status, identity, and transfer stats.
 
 ```bash
-pe status
+pal status
 ```
 
-## pe server
+## pal server
 
 Manage discovery servers.
 
 ```bash
-pe server list                    # List configured servers
-pe server add https://my-server   # Add custom server
-pe server remove https://my-server
+pal server list                    # List configured servers
+pal server add https://my-server   # Add custom server
+pal server remove https://my-server
 ```
 
-## pe network
+## pal network
 
 Private network management (Enterprise).
 
 ```bash
-pe network create "Acme Corp"
-pe network list
-pe network invite <id> alice
-pe network join <invite-code>
+pal network create "Acme Corp"
+pal network list
+pal network invite <id> alice
+pal network join <invite-code>
 ```
 
-## pe protocol
+## pal protocol
 
 Protocol diagnostics.
 
 ```bash
-pe protocol info    # PAL/1.0 version and features
+pal protocol info    # PAL/1.0 version and features
 ```
 
-## pe federation
+## pal federation
 
 Multi-server federation.
 
 ```bash
-pe federation peer    # Federate with peer discovery server
+pal federation peer    # Federate with peer discovery server
 ```

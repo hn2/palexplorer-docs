@@ -1,93 +1,93 @@
 # Extension Commands
 
-## pe ext list
+## pal ext list
 
 Show all installed extensions.
 
 ```bash
-pe ext list
+pal ext list
 ```
 
-## pe ext create
+## pal ext create
 
 Scaffold a new extension.
 
 ```bash
-pe ext create my-extension
+pal ext create my-extension
 ```
 
 Creates `extension.json`, `index.js`, tests, and docs.
 
-## pe ext enable / disable
+## pal ext enable / disable
 
 ```bash
-pe ext enable my-extension
-pe ext disable my-extension
+pal ext enable my-extension
+pal ext disable my-extension
 ```
 
-## pe ext install / remove
+## pal ext install / remove
 
 ```bash
-pe ext install ./path/to/extension    # From local path
-pe ext install https://github.com/... # From Git URL
-pe ext install-remote my-extension    # From Marketplace
-pe ext remove my-extension
+pal ext install ./path/to/extension    # From local path
+pal ext install https://github.com/... # From Git URL
+pal ext install-remote my-extension    # From Marketplace
+pal ext remove my-extension
 ```
 
-## pe ext info
+## pal ext info
 
 Show extension details, permissions, and hooks.
 
 ```bash
-pe ext info my-extension
+pal ext info my-extension
 ```
 
-## pe ext config
+## pal ext config
 
 Get or set extension configuration.
 
 ```bash
-pe ext config my-extension                    # Show all config
-pe ext config my-extension webhookUrl         # Get value
-pe ext config my-extension webhookUrl "https://..."  # Set value
+pal ext config my-extension                    # Show all config
+pal ext config my-extension webhookUrl         # Get value
+pal ext config my-extension webhookUrl "https://..."  # Set value
 ```
 
-## pe ext audit
+## pal ext audit
 
 Security audit all installed extensions.
 
 ```bash
-pe ext audit
+pal ext audit
 ```
 
-## pe ext sign
+## pal ext sign
 
 Sign extension with your Ed25519 identity.
 
 ```bash
-pe ext sign ./my-extension
+pal ext sign ./my-extension
 ```
 
-## pe ext publish
+## pal ext publish
 
 Publish to the Palexplorer Marketplace.
 
 ```bash
-pe ext publish ./my-extension
+pal ext publish ./my-extension
 ```
 
-## pe ext search
+## pal ext search
 
 Search the Marketplace.
 
 ```bash
-pe ext search "analytics"
+pal ext search "analytics"
 ```
 
-## pe ext buy / earnings / my-extensions
+## pal ext buy / earnings / my-extensions
 
 ```bash
-pe ext buy premium-extension     # Purchase paid extension
-pe ext earnings                  # Show developer earnings
-pe ext my-extensions             # List your published extensions
+pal ext buy premium-extension     # Purchase paid extension
+pal ext earnings                  # Show developer earnings
+pal ext my-extensions             # List your published extensions
 ```

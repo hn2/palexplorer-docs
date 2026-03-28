@@ -3,7 +3,7 @@
 ## Creating an Identity
 
 ```bash
-pe init "Alice"
+pal init "Alice"
 ```
 
 This generates:
@@ -20,7 +20,7 @@ The private key is stored in your OS keystore:
 Your 24-word mnemonic is the **only way** to recover your identity. Palexplorer never stores it — it's shown once during setup.
 
 ```bash
-pe recover "word1 word2 word3 ... word24"
+pal recover "word1 word2 word3 ... word24"
 ```
 
 ## Handles
@@ -29,10 +29,10 @@ Handles are optional human-readable names (e.g., `@alice`) provided by the Disco
 
 ```bash
 # Register a handle
-pe register alice
+pal register alice
 
 # Resolve a handle
-pe whoami
+pal whoami
 ```
 
 Registration uses challenge-response authentication with your Ed25519 key.
@@ -42,7 +42,7 @@ Registration uses challenge-response authentication with your Ed25519 key.
 Guest login creates a temporary identity in memory — no keystore, no persistence:
 
 ```bash
-pe login <handle>
+pal login <handle>
 ```
 
 Keys are wiped with `sodium_memzero()` on logout or exit.
@@ -52,6 +52,6 @@ Keys are wiped with `sodium_memzero()` on logout or exit.
 Each device registers separately under the same handle. Devices are linked by the same Ed25519 public key:
 
 ```bash
-pe device list
-pe device rename "Work Laptop"
+pal device list
+pal device rename "Work Laptop"
 ```

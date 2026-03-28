@@ -9,7 +9,7 @@ Palexplorer uses three discovery mechanisms, from local to global:
 Automatic peer discovery on your local network. No internet required.
 
 ```bash
-pe nearby
+pal nearby
 ```
 
 - Service type: `_palexplorer._tcp`
@@ -21,9 +21,9 @@ pe nearby
 Optional servers that provide handles, presence, and offline messaging:
 
 ```bash
-pe connect
-pe status
-pe server list
+pal connect
+pal status
+pal server list
 ```
 
 Default: `discovery.palexplorer.com` (two servers in Frankfurt).
@@ -67,9 +67,9 @@ On connect:
 ## Custom Discovery Servers
 
 ```bash
-pe config set discovery_servers https://my-server.com
-pe server add https://my-server.com
-pe server remove https://my-server.com
+pal config set discovery_servers https://my-server.com
+pal server add https://my-server.com
+pal server remove https://my-server.com
 ```
 
 Server fingerprints are verified on first connection (key pinning).
@@ -85,10 +85,10 @@ Server fingerprints are verified on first connection (key pinning).
 ## Private Networks (Enterprise)
 
 ```bash
-pe network create "Acme Corp"
-pe network invite <network-id> alice
-pe network join <invite-code>
-pe network list
+pal network create "Acme Corp"
+pal network invite <network-id> alice
+pal network join <invite-code>
+pal network list
 ```
 
 Isolated overlay networks for organizations.

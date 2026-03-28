@@ -7,7 +7,7 @@ Create a Palexplorer extension in under a minute.
 ### 1. Scaffold
 
 ```bash
-pe ext create my-extension
+pal ext create my-extension
 cd ~/.palexplorer/extensions/my-extension
 ```
 
@@ -45,9 +45,9 @@ export function deactivate() {
 ### 3. Enable & Test
 
 ```bash
-pe ext enable my-extension
-pe ext info my-extension
-pe ext list
+pal ext enable my-extension
+pal ext info my-extension
+pal ext list
 ```
 
 ## What's Next

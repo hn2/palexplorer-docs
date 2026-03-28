@@ -36,7 +36,7 @@ The mnemonic provides 256 bits of entropy and serves as the recovery mechanism.
 To recover your identity on a new device:
 
 ```bash
-pe recover "word1 word2 word3 ... word24"
+pal recover "word1 word2 word3 ... word24"
 ```
 
 This deterministically regenerates the same Ed25519 keypair from the mnemonic.

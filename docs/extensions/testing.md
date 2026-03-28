@@ -1,6 +1,6 @@
 # Testing Extensions
 
-The `pe ext create` scaffold includes a test template using Node.js built-in test runner.
+The `pal ext create` scaffold includes a test template using Node.js built-in test runner.
 
 ## Writing Tests
 
@@ -92,7 +92,7 @@ node --test test/
 Run a security audit before publishing:
 
 ```bash
-pe ext audit
+pal ext audit
 ```
 
 This scans all installed extensions for:

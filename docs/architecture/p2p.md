@@ -31,7 +31,7 @@ Route probing (`route.probe` message) tests connectivity before large transfers.
 - Caching: By public key only (handles are spoofable)
 
 ```bash
-pe nearby    # List LAN peers
+pal nearby    # List LAN peers
 ```
 
 ## DHT (Mainline)

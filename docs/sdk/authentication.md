@@ -16,7 +16,7 @@ const pal = new PalexplorerClient({
 Generate an API key:
 
 ```bash
-pe api-keys generate
+pal api-keys generate
 ```
 
 ## Bearer Token

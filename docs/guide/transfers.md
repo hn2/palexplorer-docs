@@ -4,10 +4,10 @@
 
 ```bash
 # Download by magnet link
-pe download <magnet>
+pal download <magnet>
 
 # Download multiple
-pe download <magnet1> <magnet2>
+pal download <magnet1> <magnet2>
 ```
 
 Files transfer via BitTorrent/WebTorrent protocol with automatic decryption.
@@ -16,21 +16,21 @@ Files transfer via BitTorrent/WebTorrent protocol with automatic decryption.
 
 ```bash
 # List active transfers
-pe transfers
-pe transfers --active
+pal transfers
+pal transfers --active
 
 # Pause / resume
-pe transfers pause <magnet>
-pe transfers resume <magnet>
+pal transfers pause <magnet>
+pal transfers resume <magnet>
 
 # Cancel
-pe cancel <magnet>
+pal cancel <magnet>
 
 # View history
-pe transfers --history
+pal transfers --history
 
 # Transfer statistics
-pe transfers stats
+pal transfers stats
 ```
 
 ## Transfer Routing
@@ -51,8 +51,8 @@ Keep your shares available for download:
 
 ```bash
 # Start seeding all shares
-pe serve
+pal serve
 
 # Serve with web dashboard
-pe serve --web --port 7474
+pal serve --web --port 7474
 ```

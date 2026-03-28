@@ -41,8 +41,8 @@ On first connection, the server's fingerprint (SHA-256 of public key, first 8 ch
 ### Custom Servers
 
 ```bash
-pe config set discovery_servers https://my-server.com
-pe server add https://my-server.com
+pal config set discovery_servers https://my-server.com
+pal server add https://my-server.com
 ```
 
 You can run your own discovery server using [palexplorer-server](https://github.com/hn2/palexplorer-server).
@@ -72,7 +72,7 @@ BitTorrent Mainline DHT with BEP 44:
 Multiple discovery servers can federate to share handle registrations:
 
 ```bash
-pe federation peer
+pal federation peer
 ```
 
 Cross-server handle resolution enables a decentralized network of discovery servers.

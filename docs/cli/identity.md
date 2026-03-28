@@ -1,94 +1,94 @@
 # Identity Commands
 
-## pe init
+## pal init
 
 Create a new identity with an Ed25519 keypair.
 
 ```bash
-pe init "Alice"
+pal init "Alice"
 ```
 
 Generates a 24-word BIP-39 recovery phrase. Write it down — it's the only way to recover your identity.
 
-## pe whoami
+## pal whoami
 
 Show your current identity.
 
 ```bash
-pe whoami
+pal whoami
 ```
 
 Output: public key, handle (if registered), device name, role.
 
-## pe register
+## pal register
 
 Register a handle on the discovery server.
 
 ```bash
-pe register alice
+pal register alice
 ```
 
 Uses challenge-response authentication with your Ed25519 key. Handles are globally unique.
 
-## pe recover
+## pal recover
 
 Recover identity from a 24-word mnemonic.
 
 ```bash
-pe recover "word1 word2 word3 ... word24"
+pal recover "word1 word2 word3 ... word24"
 ```
 
-## pe auth
+## pal auth
 
 OAuth authentication (Google, GitHub).
 
 ```bash
-pe auth google
-pe auth github
+pal auth google
+pal auth github
 ```
 
 Links a social identity to your cryptographic keypair.
 
-## pe web-login
+## pal web-login
 
 Web-based device login flow for discovery server registration.
 
 ```bash
-pe web-login
+pal web-login
 ```
 
-## pe user
+## pal user
 
 Multi-user management.
 
 ```bash
-pe user list                  # List all users
-pe user add "Bob"             # Create new user
-pe user remove "Bob"          # Remove user
-pe user promote "Bob"         # Promote to owner
+pal user list                  # List all users
+pal user add "Bob"             # Create new user
+pal user remove "Bob"          # Remove user
+pal user promote "Bob"         # Promote to owner
 ```
 
-## pe su
+## pal su
 
 Switch active user (admin only).
 
 ```bash
-pe su Bob
+pal su Bob
 ```
 
-## pe login
+## pal login
 
 Guest login (temporary, in-memory keys).
 
 ```bash
-pe login alice
+pal login alice
 ```
 
-## pe device
+## pal device
 
 Manage devices.
 
 ```bash
-pe device list                # List registered devices
-pe device rename "Work PC"    # Rename current device
+pal device list                # List registered devices
+pal device rename "Work PC"    # Rename current device
 ```

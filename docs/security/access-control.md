@@ -56,4 +56,4 @@ All actions are logged locally:
 ```
 
 - Rolling window: 500 entries (free), 2000 entries (Pro)
-- Exportable: `pe audit export --format json`
+- Exportable: `pal audit export --format json`

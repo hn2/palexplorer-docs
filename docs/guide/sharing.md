@@ -4,19 +4,19 @@
 
 ```bash
 # Basic share
-pe share ./my-folder --name "Project Files"
+pal share ./my-folder --name "Project Files"
 
 # Private share with specific recipients
-pe share ./report.pdf --name "Q4 Report" --with alice,bob
+pal share ./report.pdf --name "Q4 Report" --with alice,bob
 
 # Public share (anyone with link)
-pe share ./photos --name "Vacation" -v public
+pal share ./photos --name "Vacation" -v public
 
 # Password-protected share
-pe share ./sensitive.zip --name "Financials" --password
+pal share ./sensitive.zip --name "Financials" --password
 
 # With expiry and download limits (Pro)
-pe share ./release.zip --name "Beta Build" --expires 24h --max-downloads 100
+pal share ./release.zip --name "Beta Build" --expires 24h --max-downloads 100
 ```
 
 ## Visibility Levels
@@ -34,13 +34,13 @@ pe share ./release.zip --name "Beta Build" --expires 24h --max-downloads 100
 
 ```bash
 # List all shares
-pe list
+pal list
 
 # Rename a share
-pe share-rename <share-id> "New Name"
+pal share-rename <share-id> "New Name"
 
 # Revoke (stop sharing)
-pe revoke <share-id>
+pal revoke <share-id>
 ```
 
 ## Share Links
@@ -48,9 +48,9 @@ pe revoke <share-id>
 Generate downloadable links for recipients who don't have Palexplorer:
 
 ```bash
-pe share-link add <share-id>
-pe share-link list <share-id>
-pe share-link remove <link-id>
+pal share-link add <share-id>
+pal share-link list <share-id>
+pal share-link remove <link-id>
 ```
 
 ## Permissions
@@ -59,13 +59,13 @@ Control what each recipient can do:
 
 ```bash
 # View permissions
-pe permissions <share-id>
+pal permissions <share-id>
 
 # Grant write access
-pe permissions grant <share-id> <public-key> write
+pal permissions grant <share-id> <public-key> write
 
 # Revoke all access
-pe permissions revoke <share-id> <public-key>
+pal permissions revoke <share-id> <public-key>
 ```
 
 | Permission | Description |
@@ -81,9 +81,9 @@ pe permissions revoke <share-id> <public-key>
 Browse a peer's shares without downloading:
 
 ```bash
-pe remote browse alice
-pe remote files alice "Project Files"
-pe remote download alice "Project Files"
+pal remote browse alice
+pal remote files alice "Project Files"
+pal remote download alice "Project Files"
 ```
 
 ## Encryption

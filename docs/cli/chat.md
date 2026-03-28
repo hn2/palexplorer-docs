@@ -1,39 +1,39 @@
 # Chat Commands
 
-## pe chat send
+## pal chat send
 
 Send an encrypted message to a pal.
 
 ```bash
-pe chat send alice "Hey, check out this share!"
+pal chat send alice "Hey, check out this share!"
 ```
 
 Messages are encrypted with NaCl `crypto_box` (E2EE).
 
-## pe chat history
+## pal chat history
 
 View message history with a pal.
 
 ```bash
-pe chat history alice
+pal chat history alice
 ```
 
-## pe chat fetch
+## pal chat fetch
 
 Fetch offline messages from the discovery server inbox.
 
 ```bash
-pe chat fetch
+pal chat fetch
 ```
 
 Messages queued while you were offline are downloaded and decrypted.
 
-## pe comment
+## pal comment
 
 Comment on a shared item.
 
 ```bash
-pe comment add <share-id> "Great photos!"
-pe comment list <share-id>
-pe comment delete <comment-id>
+pal comment add <share-id> "Great photos!"
+pal comment list <share-id>
+pal comment delete <comment-id>
 ```

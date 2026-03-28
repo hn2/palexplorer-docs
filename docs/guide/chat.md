@@ -5,13 +5,13 @@ End-to-end encrypted messaging between pals. Messages travel directly peer-to-pe
 ## Send Messages
 
 ```bash
-pe chat send alice "Hey, check out my new share!"
+pal chat send alice "Hey, check out my new share!"
 ```
 
 ## View History
 
 ```bash
-pe chat history alice
+pal chat history alice
 ```
 
 ## Fetch Offline Messages
@@ -19,7 +19,7 @@ pe chat history alice
 When you're offline, messages are queued via the discovery server inbox:
 
 ```bash
-pe chat fetch
+pal chat fetch
 ```
 
 ## Encryption

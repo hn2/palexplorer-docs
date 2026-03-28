@@ -1,29 +1,29 @@
 # Configuration Commands
 
-## pe config list
+## pal config list
 
 Show all custom settings.
 
 ```bash
-pe config list
+pal config list
 ```
 
-## pe config get / set
+## pal config get / set
 
 ```bash
-pe config get logLevel
-pe config set logLevel debug
-pe config set downloadDir /path/to/downloads
-pe config set bandwidth_cap 1024   # KB/s
+pal config get logLevel
+pal config set logLevel debug
+pal config set downloadDir /path/to/downloads
+pal config set bandwidth_cap 1024   # KB/s
 ```
 
-## pe config reset
+## pal config reset
 
 Reset to defaults.
 
 ```bash
-pe config reset              # Reset all
-pe config reset logLevel     # Reset specific key
+pal config reset              # Reset all
+pal config reset logLevel     # Reset specific key
 ```
 
 ## Key Reference

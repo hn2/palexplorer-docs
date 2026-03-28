@@ -85,6 +85,6 @@ Three discovery layers, from local to global:
 
 | Role | Capabilities |
 |------|-------------|
-| **Owner** | Full access. Manages users, shares, settings. Created on first `pe init`. |
+| **Owner** | Full access. Manages users, shares, settings. Created on first `pal init`. |
 | **User** | Create shares, chat, manage own pals. Cannot manage other users. |
 | **Guest** | Read-only. Keys in memory only (wiped on exit). |

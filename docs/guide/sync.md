@@ -5,29 +5,29 @@ Two-way folder synchronization between devices using manifest-based delta sync.
 ## Setup a Sync Pair
 
 ```bash
-pe sync add alice ./shared-folder
+pal sync add alice ./shared-folder
 ```
 
 ## Push & Pull
 
 ```bash
 # Push local changes to peer
-pe sync push <pair-id>
+pal sync push <pair-id>
 
 # Pull peer changes to local
-pe sync pull <pair-id>
+pal sync pull <pair-id>
 
 # Show pending changes
-pe sync diff <pair-id>
+pal sync diff <pair-id>
 
 # Check sync status
-pe sync status <pair-id>
+pal sync status <pair-id>
 ```
 
 ## Auto-Sync (Watch Mode)
 
 ```bash
-pe sync watch <pair-id>
+pal sync watch <pair-id>
 ```
 
 Watches for file changes and syncs automatically.
@@ -37,9 +37,9 @@ Watches for file changes and syncs automatically.
 When both sides modify the same file:
 
 ```bash
-pe sync resolve <pair-id> <file> keep_local
-pe sync resolve <pair-id> <file> keep_remote
-pe sync resolve <pair-id> <file> keep_both
+pal sync resolve <pair-id> <file> keep_local
+pal sync resolve <pair-id> <file> keep_remote
+pal sync resolve <pair-id> <file> keep_both
 ```
 
 ## How It Works
@@ -79,7 +79,7 @@ Only transfer changed blocks (4KB each) instead of full files. Reduces bandwidth
 ## Manage Sync Pairs
 
 ```bash
-pe sync list
-pe sync history <pair-id>
-pe sync remove <pair-id>
+pal sync list
+pal sync history <pair-id>
+pal sync remove <pair-id>
 ```

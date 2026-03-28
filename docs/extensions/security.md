@@ -40,7 +40,7 @@ Community extensions are scanned with an AST analyzer (acorn + acorn-walk) that 
 Extensions must be signed with the developer's Ed25519 key:
 
 ```bash
-pe ext sign ./my-extension
+pal ext sign ./my-extension
 ```
 
 The signature covers `extension.json` + `index.js`. Unsigned extensions are rejected (unless `extensionRequireSignature=false` in dev mode).

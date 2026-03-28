@@ -6,7 +6,7 @@ Palexplorer supports multiple users on a single device.
 
 | Role | Capabilities |
 |------|-------------|
-| **Owner** | Full access. Manage users, shares, all settings. Created on first `pe init`. |
+| **Owner** | Full access. Manage users, shares, all settings. Created on first `pal init`. |
 | **User** | Create shares, chat, manage own pals. Cannot manage other users. |
 | **Guest** | Read-only. Keys in memory only (wiped on exit). |
 
@@ -14,25 +14,25 @@ Palexplorer supports multiple users on a single device.
 
 ```bash
 # List all users
-pe user list
+pal user list
 
 # Create a new user
-pe user add "Bob"
+pal user add "Bob"
 
 # Switch to another user
-pe su Bob
+pal su Bob
 
 # Promote to owner (irreversible)
-pe user promote Bob
+pal user promote Bob
 
 # Remove a user
-pe user remove Bob
+pal user remove Bob
 ```
 
 ## Guest Login
 
 ```bash
-pe login <handle>
+pal login <handle>
 ```
 
 Guest mode creates a temporary in-memory identity — no keystore persistence. Keys are securely wiped with `sodium_memzero()` on logout.

@@ -1,73 +1,73 @@
 # File Commands
 
-## pe file ls
+## pal file ls
 
 List files in a directory.
 
 ```bash
-pe file ls /path/to/dir
-pe file ls /path -r           # Recursive
+pal file ls /path/to/dir
+pal file ls /path -r           # Recursive
 ```
 
-## pe file tree
+## pal file tree
 
 Show directory tree.
 
 ```bash
-pe file tree /path
+pal file tree /path
 ```
 
-## pe file info
+## pal file info
 
 Show file metadata (size, hash, mtime, permissions).
 
 ```bash
-pe file info /path/to/file
+pal file info /path/to/file
 ```
 
-## pe file search
+## pal file search
 
 Search files by pattern.
 
 ```bash
-pe file search /path --query "*.pdf"
+pal file search /path --query "*.pdf"
 ```
 
-## pe file copy / move
+## pal file copy / move
 
 ```bash
-pe file copy /src /dst
-pe file move /src /dst
+pal file copy /src /dst
+pal file move /src /dst
 ```
 
-## pe file mkdir
+## pal file mkdir
 
 Create directory (recursive).
 
 ```bash
-pe file mkdir /path/to/new/dir
+pal file mkdir /path/to/new/dir
 ```
 
-## pe file delete
+## pal file delete
 
 Delete files.
 
 ```bash
-pe file delete /path/to/file
+pal file delete /path/to/file
 ```
 
-## pe file open
+## pal file open
 
 Open in default application (desktop only).
 
 ```bash
-pe file open /path/to/file
+pal file open /path/to/file
 ```
 
-## pe file audit
+## pal file audit
 
 View file access log for a share.
 
 ```bash
-pe file audit <share-id>
+pal file audit <share-id>
 ```

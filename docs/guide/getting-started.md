@@ -39,19 +39,19 @@ Write down your 24-word recovery phrase and keep it safe. It's the **only way** 
 **Via CLI:**
 
 ```bash
-pe init "YourName"
+pal init "YourName"
 ```
 
 This outputs your recovery phrase. Then optionally register a handle:
 
 ```bash
-pe register myhandle
+pal register myhandle
 ```
 
 ### Check Your Identity
 
 ```bash
-pe whoami
+pal whoami
 ```
 
 Shows your public key, handle (if registered), and device info.
@@ -69,47 +69,47 @@ Shows your public key, handle (if registered), and device info.
 
 ```bash
 # Share a folder
-pe share ./my-folder --name "Project Files"
+pal share ./my-folder --name "Project Files"
 
 # Share with specific pals
-pe share ./photo.jpg --name "Vacation" --with alice,bob
+pal share ./photo.jpg --name "Vacation" --with alice,bob
 
 # List your shares
-pe list
+pal list
 ```
 
 ## Download Files
 
 ```bash
 # Download by magnet link or share link
-pe download <magnet-or-link>
+pal download <magnet-or-link>
 
 # List active transfers
-pe transfers
+pal transfers
 
 # Pause / resume
-pe transfers pause <id>
-pe transfers resume <id>
+pal transfers pause <id>
+pal transfers resume <id>
 ```
 
 ## Add Pals
 
 ```bash
 # Add by handle
-pe pal add alice
+pal pal add alice
 
 # Discover on LAN
-pe nearby
+pal nearby
 
 # List all pals
-pe pal list
+pal pal list
 ```
 
 ## Connect to Discovery Network
 
 ```bash
-pe connect
-pe status
+pal connect
+pal status
 ```
 
 This connects to discovery servers for handle resolution, online presence, and offline messaging.

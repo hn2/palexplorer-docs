@@ -75,7 +75,7 @@ Each config key supports:
 Users configure values with:
 
 ```bash
-pe ext config my-extension webhookUrl "https://..."
+pal ext config my-extension webhookUrl "https://..."
 ```
 
 ## Validation Rules

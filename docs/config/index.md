@@ -3,10 +3,10 @@
 ## Config Commands
 
 ```bash
-pe config list              # Show all custom settings
-pe config get <key>         # Get specific value
-pe config set <key> <value> # Set value
-pe config reset [key]       # Reset to default(s)
+pal config list              # Show all custom settings
+pal config get <key>         # Get specific value
+pal config set <key> <value> # Set value
+pal config reset [key]       # Reset to default(s)
 ```
 
 ## Configuration Keys

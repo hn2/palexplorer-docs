@@ -1,11 +1,11 @@
 # Sharing Commands
 
-## pe share
+## pal share
 
 Share a file or folder.
 
 ```bash
-pe share <path> [options]
+pal share <path> [options]
 ```
 
 **Options:**
@@ -24,62 +24,62 @@ pe share <path> [options]
 **Examples:**
 
 ```bash
-pe share ./docs --name "Project Docs"
-pe share ./photo.jpg --name "Photo" --with alice,bob
-pe share ./build.zip --name "Beta" -v public --expires 48h
+pal share ./docs --name "Project Docs"
+pal share ./photo.jpg --name "Photo" --with alice,bob
+pal share ./build.zip --name "Beta" -v public --expires 48h
 ```
 
-## pe list
+## pal list
 
 List all shares.
 
 ```bash
-pe list          # Your shares
-pe list --all    # All shares (including received)
+pal list          # Your shares
+pal list --all    # All shares (including received)
 ```
 
-## pe revoke
+## pal revoke
 
 Stop sharing.
 
 ```bash
-pe revoke <share-id>
+pal revoke <share-id>
 ```
 
-## pe share-rename
+## pal share-rename
 
 Rename a share.
 
 ```bash
-pe share-rename <share-id> "New Name"
+pal share-rename <share-id> "New Name"
 ```
 
-## pe share-link
+## pal share-link
 
 Manage share links.
 
 ```bash
-pe share-link add <share-id>       # Create link
-pe share-link list <share-id>      # List links
-pe share-link remove <link-id>     # Delete link
+pal share-link add <share-id>       # Create link
+pal share-link list <share-id>      # List links
+pal share-link remove <link-id>     # Delete link
 ```
 
-## pe permissions
+## pal permissions
 
 View and manage per-recipient permissions.
 
 ```bash
-pe permissions <share-id>                          # View
-pe permissions grant <share-id> <pubkey> write     # Grant
-pe permissions revoke <share-id> <pubkey>          # Revoke
+pal permissions <share-id>                          # View
+pal permissions grant <share-id> <pubkey> write     # Grant
+pal permissions revoke <share-id> <pubkey>          # Revoke
 ```
 
-## pe remote
+## pal remote
 
 Browse and download from a peer's shares.
 
 ```bash
-pe remote browse alice                    # List shares
-pe remote files alice "Share Name"        # List files
-pe remote download alice "Share Name"     # Download
+pal remote browse alice                    # List shares
+pal remote files alice "Share Name"        # List files
+pal remote download alice "Share Name"     # Download
 ```

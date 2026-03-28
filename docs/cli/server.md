@@ -1,31 +1,31 @@
 # Server & Services Commands
 
-## pe serve
+## pal serve
 
 Start the WebTorrent seeder (keeps shares available for download).
 
 ```bash
-pe serve                      # Basic seeder
-pe serve --web                # With web dashboard + REST API
-pe serve --web --port 7474    # Custom port
+pal serve                      # Basic seeder
+pal serve --web                # With web dashboard + REST API
+pal serve --web --port 7474    # Custom port
 ```
 
-## pe web
+## pal web
 
 Launch the web dashboard.
 
 ```bash
-pe web
+pal web
 ```
 
 REST API + WebSocket server with bearer token auth.
 
-## pe vfs
+## pal vfs
 
 Mount shares as a virtual drive via WebDAV.
 
 ```bash
-pe vfs
+pal vfs
 ```
 
 - **Windows**: Mounts as `P:` drive
@@ -34,33 +34,33 @@ pe vfs
 
 Default server: `localhost:8765`
 
-## pe explorer
+## pal explorer
 
 Open a share in the native file manager.
 
 ```bash
-pe explorer <share-id>
+pal explorer <share-id>
 ```
 
-## pe stream
+## pal stream
 
 Media streaming.
 
 ```bash
-pe stream broadcast <file>    # Start streaming
-pe stream join <handle>       # Join a stream
+pal stream broadcast <file>    # Start streaming
+pal stream join <handle>       # Join a stream
 ```
 
-## pe schedule
+## pal schedule
 
 Scheduled tasks.
 
 ```bash
-pe schedule add "0 */6 * * *" "pe sync push all"
+pal schedule add "0 */6 * * *" "pal sync push all"
 ```
 
-## pe update
+## pal update
 
 ```bash
-pe update check    # Check for app updates
+pal update check    # Check for app updates
 ```
