@@ -29,7 +29,6 @@ export default defineConfig({
           { text: 'Website', link: 'https://palexplorer.com' },
           { text: 'Download', link: 'https://palexplorer.com/download' },
           { text: 'Discord', link: 'https://discord.gg/VrCcGmNJ8Q' },
-          { text: 'GitHub', link: 'https://github.com/nicep2p/palexplorer' },
         ]
       }
     ],
@@ -77,6 +76,7 @@ export default defineConfig({
             { text: 'Pals & Groups', link: '/cli/pals-and-groups' },
             { text: 'Chat', link: '/cli/chat' },
             { text: 'Network & Discovery', link: '/cli/network' },
+            { text: 'AI Assistant', link: '/cli/ai' },
             { text: 'Extensions', link: '/cli/extensions' },
             { text: 'Configuration', link: '/cli/config' },
             { text: 'Server & Services', link: '/cli/server' },
@@ -149,7 +149,6 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/nicep2p/palexplorer' },
       { icon: 'discord', link: 'https://discord.gg/VrCcGmNJ8Q' },
     ],
 
@@ -157,14 +156,9 @@ export default defineConfig({
       provider: 'local'
     },
 
-    editLink: {
-      pattern: 'https://github.com/hn2/palexplorer-docs/edit/master/docs/:path',
-      text: 'Edit this page on GitHub'
-    },
-
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright 2024-present Palexplorer'
+      message: 'Proprietary software. All rights reserved. <a href="https://palexplorer.com/license">License</a>',
+      copyright: 'Copyright 2015-present Palexplorer'
     },
   }
 })

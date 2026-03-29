@@ -25,6 +25,7 @@ Requires Node.js 20+. Also included with the desktop app.
 | [Extensions](/cli/extensions) | `ext list/install/enable/create/publish` | Manage extensions |
 | [Config](/cli/config) | `config list/get/set/reset` | App configuration |
 | [Server](/cli/server) | `serve`, `web`, `vfs`, `explorer` | Local services |
+| [AI Assistant](/cli/ai) | `ai chat/search/config` | Natural language CLI and AI chat |
 | [Advanced](/cli/advanced) | `backup`, `billing`, `api-keys`, `compliance` | Power user features |
 
 ## Global Flags
