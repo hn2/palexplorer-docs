@@ -1,5 +1,42 @@
 # Advanced Commands
 
+## pal system
+
+System health dashboard — shows identity, P2P connections, active shares, transfer stats, memory usage, and extension status.
+
+```bash
+pal system                             # Full health dashboard
+pal system --json                      # Machine-readable output
+```
+
+## CLI Autocorrect & Shell Completion
+
+The CLI includes autocorrect for mistyped commands:
+
+```bash
+pal transfres                          # Suggests: pal transfers
+pal shre ./file                        # Suggests: pal share
+```
+
+Generate shell completion scripts:
+
+```bash
+pal completion bash >> ~/.bashrc       # Bash
+pal completion zsh >> ~/.zshrc         # Zsh
+pal completion fish > ~/.config/fish/completions/pal.fish
+```
+
+## Multi-Value Flags
+
+19 commands support comma-separated values for flags that accept multiple inputs:
+
+```bash
+pal share ./docs --with alice,bob,charlie
+pal pals add alice,bob,charlie
+pal group add "Team" alice,bob,charlie
+pal revoke id1,id2,id3
+```
+
 ## Backup & Restore
 
 ```bash

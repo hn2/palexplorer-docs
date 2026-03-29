@@ -96,13 +96,13 @@ pal transfers resume <id>
 
 ```bash
 # Add by handle
-pal pal add alice
+pal pals add alice
 
 # Discover on LAN
 pal nearby
 
 # List all pals
-pal pal list
+pal pals list
 ```
 
 ## Connect to Discovery Network

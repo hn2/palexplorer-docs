@@ -78,12 +78,20 @@ pal permissions revoke <share-id> <public-key>
 
 ## Remote Browsing
 
-Browse a peer's shares without downloading:
+Browse a peer's shares without downloading using the interactive REPL:
 
 ```bash
-pal remote browse alice
-pal remote files alice "Project Files"
-pal remote download alice "Project Files"
+pal browse alice:shares                  # Open interactive browser
+pal browse alice:"Project Files"         # Browse a specific share
+```
+
+Inside the browser: `ls`, `cd`, `pwd`, `get <file>`, `get *.mp4`, `find <pattern>`, `exit`
+
+To transfer individual files on-demand:
+
+```bash
+pal transfer start alice:"Project Files"/report.pdf ~/Downloads
+pal transfer list                        # Monitor on-demand transfers
 ```
 
 ## Encryption

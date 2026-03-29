@@ -1,20 +1,20 @@
 # Pals & Groups Commands
 
-## pal pal add
+## pal pals add
 
 Add a pal.
 
 ```bash
-pal pal add alice                           # By handle
-pal pal add <public-key> --name "Alice"     # By public key
+pal pals add alice                           # By handle
+pal pals add <public-key> --name "Alice"     # By public key
 ```
 
-## pal pal list / rename / remove
+## pal pals list / rename / remove
 
 ```bash
-pal pal list
-pal pal rename <id> "Alice Smith"
-pal pal remove <id>
+pal pals list
+pal pals rename <id> "Alice Smith"
+pal pals remove <id>
 ```
 
 ## pal nearby
