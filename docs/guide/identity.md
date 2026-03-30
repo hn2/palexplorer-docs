@@ -25,17 +25,20 @@ pal recover "word1 word2 word3 ... word24"
 
 ## Handles
 
-Handles are optional human-readable names (e.g., `@alice`) provided by the Discovery extension:
+Handles (e.g., `@alice`) are the recommended way to share your identity. They're provided by the Discovery extension and registered via challenge-response authentication with your Ed25519 key.
 
 ```bash
-# Register a handle
+# Register a handle during setup (recommended)
+pal init            # prompts for @handle
+
+# Register or change handle later
 pal register alice
 
-# Resolve a handle
+# See your current identity
 pal whoami
 ```
 
-Registration uses challenge-response authentication with your Ed25519 key.
+Handles are optional — you can share your raw public key instead if you prefer to stay fully anonymous.
 
 ## Guest Mode
 

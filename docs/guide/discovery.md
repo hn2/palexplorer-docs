@@ -26,7 +26,7 @@ pal status
 pal server list
 ```
 
-Default: `discovery.palexplorer.com` (two servers in Frankfurt).
+Default: `138.2.142.188,92.5.46.86` (two servers in Frankfurt, IP-only — no DNS).
 
 Features:
 - `@handle` registration (challenge-response auth)
