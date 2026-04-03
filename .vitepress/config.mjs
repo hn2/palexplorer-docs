@@ -22,6 +22,7 @@ export default defineConfig({
       { text: 'CLI', link: '/cli/' },
       { text: 'Extensions', link: '/extensions/' },
       { text: 'SDK', link: '/sdk/' },
+      { text: 'Pricing', link: '/pricing' },
       { text: 'Security', link: '/security/' },
       {
         text: 'Links',
