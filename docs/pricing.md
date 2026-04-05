@@ -5,8 +5,8 @@
 | Plan | Price | Who it's for |
 |------|-------|--------------|
 | **Free** | $0 forever | Individual users — full P2P sharing, @handle, encryption |
-| **Pro** | $2.99/mo or $29.99/yr | Power users — unlimited pals, relay quota, advanced tools |
-| **Enterprise** | $9.99/seat/mo | Organizations — SSO, admin dashboard, compliance |
+| **Pro** | $4.99/mo or $49.99/yr | Power users — unlimited pals, relay quota, advanced tools |
+| **Enterprise** | Custom | Organizations — SSO, admin dashboard, compliance |
 
 ## What's Included
 
@@ -21,7 +21,7 @@
 - Email & OAuth recovery
 - All free extensions
 
-### Pro ($2.99/mo)
+### Pro ($4.99/mo)
 Everything in Free, plus:
 - Unlimited pals
 - 50 GB relay quota
@@ -32,7 +32,7 @@ Everything in Free, plus:
 - Media streaming
 - Custom themes
 
-### Enterprise ($9.99/seat/mo)
+### Enterprise (Custom)
 Everything in Pro, plus:
 - Organization & department management
 - Admin dashboard
@@ -45,6 +45,7 @@ Everything in Pro, plus:
 - Self-hosted discovery server
 - Dedicated support
 - Private overlay networks
+- Custom contract & invoicing
 
 ## Extension Tiers
 
@@ -61,4 +62,5 @@ Extensions are gated by subscription plan:
 - Billed via Lemon Squeezy (credit card, PayPal)
 - Monthly billing — cancel any time
 - Pro features are disabled (not deleted) when subscription ends
-- Annual plan available: $29.99/year for Pro (save 16%)
+- Annual plan available: $49.99/year for Pro (save 17%)
+- Enterprise: contact hello@palexplorer.com for custom pricing
