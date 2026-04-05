@@ -43,10 +43,9 @@ Palexplorer is an **encrypted peer-to-peer file sharing** application. Files tra
 
 | Plan | Cost | Includes |
 |------|------|----------|
-| **Free** | $0 forever | Unlimited P2P, 10+ free extensions, LAN & WAN sharing |
-| **Pro** | $9/mo | VFS, streaming, analytics, TURN relay, extended policies |
-| **Team** | $12/seat/mo | SSO, SCIM, RBAC, compliance modules, admin dashboard |
-| **Enterprise** | Custom | SLA, self-hosted discovery, dedicated support |
+| **Free** | $0 forever | Full P2P sharing, encryption, @handle, up to 10 pals |
+| **Pro** | $4.99/mo | Unlimited pals, VFS, streaming, analytics, TURN relay |
+| **Enterprise** | Custom | SSO, SCIM, RBAC, compliance, admin dashboard, SLA |
 
 See [Pricing](/pricing) for full details.
 

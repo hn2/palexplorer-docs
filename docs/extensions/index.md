@@ -19,7 +19,7 @@ Palexplorer's core is intentionally minimal — identity, shares, encryption, an
 | `@palexplorer/email-notifications` | Email notifications (SMTP, SendGrid, etc.) |
 | `@palexplorer/user-mgmt` | Multi-user roles and access control |
 
-### Pro ($9/mo)
+### Pro ($4.99/mo)
 
 | Extension | Description |
 |-----------|-------------|
@@ -29,7 +29,7 @@ Palexplorer's core is intentionally minimal — identity, shares, encryption, an
 | `@palexplorer/transfer-analytics` | Transfer statistics and graphs |
 | `@palexplorer/media-streaming` | Audio/video streaming |
 
-### Enterprise (Team/Enterprise plan)
+### Enterprise (Custom pricing)
 
 | Extension | Description |
 |-----------|-------------|
