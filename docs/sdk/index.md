@@ -55,6 +55,5 @@ See [Authentication](/sdk/authentication) for API key and token setup.
 | Plan | Requests/min | API Keys |
 |------|-------------|----------|
 | Free | No access | 0 |
-| Pro | 600 | 3 |
-| API Pro | 600 | 5 |
+| Pro | 600 | 5 |
 | Enterprise | 2,400 | 50 |
