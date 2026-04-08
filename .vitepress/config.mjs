@@ -135,7 +135,7 @@ export default defineConfig({
           items: [
             { text: 'Overview', link: '/architecture/' },
             { text: 'P2P Stack', link: '/architecture/p2p' },
-            { text: 'PAL/1.0 Protocol', link: '/architecture/protocol' },
+            { text: 'PAL/2.0 Protocol', link: '/architecture/protocol' },
             { text: 'Discovery', link: '/architecture/discovery' },
           ]
         }

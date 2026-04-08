@@ -9,7 +9,7 @@
 | **BEP 44** | Signed mutable DHT data (handle→key mapping) |
 | **mDNS/Bonjour** | LAN auto-discovery |
 | **WebRTC** | Direct peer connections (NAT traversal) |
-| **PAL/1.0** | Control plane (messaging, policy, key exchange) |
+| **PAL/2.0** | Control plane (messaging, policy, key exchange, streaming) |
 
 ## Transfer Routing
 
@@ -46,7 +46,7 @@ BitTorrent Mainline DHT with BEP 44 mutable items for handle registration:
 ## Signaling Server
 
 Local TCP server on port 7474:
-- Receives PAL/1.0 envelopes from peers
+- Receives PAL/2.0 envelopes from peers
 - Handles share negotiation, sync handshake, policy updates
 - Not HTTP — native socket transport
 

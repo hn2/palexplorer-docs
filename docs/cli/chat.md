@@ -28,6 +28,14 @@ pal chat fetch
 
 Messages queued while you were offline are downloaded and decrypted.
 
+## pal chat flush
+
+Retry delivering queued offline messages.
+
+```bash
+pal chat flush
+```
+
 ## pal comment
 
 Comment on a shared item.

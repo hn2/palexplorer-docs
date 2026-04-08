@@ -7,9 +7,9 @@
 │                 EXTENSIONS                       │
 │  discovery · sync · chat · vfs · streaming · sso │
 ├─────────────────────────────────────────────────┤
-│                 PAL/1.0 PROTOCOL                 │
+│                 PAL/2.0 PROTOCOL                 │
 │  envelope · messages · policy · negotiation      │
-│  routing · sync · handler                        │
+│  routing · sync · handler · ratchet · sessions   │
 ├─────────────────────────────────────────────────┤
 │                 CORE P2P ENGINE                  │
 │  identity · shares · pals · groups · permissions │
@@ -43,5 +43,5 @@
 ## Learn More
 
 - [P2P Stack](/architecture/p2p) — BitTorrent, DHT, mDNS, WebRTC
-- [PAL/1.0 Protocol](/architecture/protocol) — Message types, envelope format
+- [PAL/2.0 Protocol](/architecture/protocol) — Message types, envelope format, capabilities
 - [Discovery](/architecture/discovery) — Handle resolution, server federation

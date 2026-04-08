@@ -16,7 +16,7 @@ Palexplorer is an **encrypted peer-to-peer file sharing** application. Files tra
 │                 EXTENSIONS                       │
 │  discovery · sync · chat · vfs · streaming · sso │
 ├─────────────────────────────────────────────────┤
-│                 PAL/1.0 PROTOCOL                 │
+│                 PAL/2.0 PROTOCOL                 │
 │  envelope · messages · policy · negotiation      │
 ├─────────────────────────────────────────────────┤
 │                 CORE P2P ENGINE                  │

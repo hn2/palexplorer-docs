@@ -27,7 +27,7 @@ pal ai "list all shares I have with bob"
 # → pal list --with bob
 
 pal ai "sync my projects folder two-way with charlie"
-# → pal sync add ~/projects --with charlie --mode both
+# → pal sync start ~/projects charlie
 
 pal ai "remove alice from my photos share"
 # → pal revoke --share photos --pal alice
@@ -53,7 +53,7 @@ Ask questions about your shares, pals, and how to use Palexplorer:
 pal ai chat                              # Start interactive chat session
 pal ai chat "what have I shared with alice?"
 pal ai chat "how do I sync a folder two-way?"
-pal ai chat "explain what PAL/1.0 protocol does"
+pal ai chat "explain what PAL/2.0 protocol does"
 ```
 
 ## Smart Search

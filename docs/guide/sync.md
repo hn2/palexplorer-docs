@@ -5,7 +5,9 @@ Two-way folder synchronization between devices using manifest-based delta sync.
 ## Setup a Sync Pair
 
 ```bash
-pal sync add alice ./shared-folder
+pal sync start ./shared-folder alice     # Bi-directional (default)
+pal sync push ./shared-folder alice      # One-way push
+pal sync pull ./shared-folder alice      # One-way pull
 ```
 
 ## Push & Pull
@@ -34,12 +36,11 @@ Watches for file changes and syncs automatically.
 
 ## Conflict Resolution
 
-When both sides modify the same file:
+When both sides modify the same file, a `CONFLICT` is raised. Use the diff command to review then re-run the sync:
 
 ```bash
-pal sync resolve <pair-id> <file> keep_local
-pal sync resolve <pair-id> <file> keep_remote
-pal sync resolve <pair-id> <file> keep_both
+pal sync diff <localPath> <remotePath>   # Review what needs to transfer
+pal sync status [path]                   # Show conflicts and pending changes
 ```
 
 ## How It Works

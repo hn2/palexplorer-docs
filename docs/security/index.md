@@ -34,7 +34,7 @@ BIP-39 Mnemonic (24 words, 256-bit entropy)
 | Eavesdropping | XChaCha20-Poly1305 encryption on all content |
 | Impersonation | Ed25519 signatures on all protocol messages |
 | Key compromise | Per-share random keys (compromise one share, not all) |
-| Replay attacks | Nonce + timestamp in PAL/1.0 envelopes |
+| Replay attacks | Nonce + timestamp in PAL/2.0 envelopes; dedup window (1h, 10k IDs) |
 | Metadata leakage | Encrypted filename manifest, HMAC-obfuscated torrent names |
 | Server compromise | Core works without servers; servers never see plaintext |
 | Extension malware | AST analysis, Worker sandbox, permission model, signatures |

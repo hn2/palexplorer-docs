@@ -71,7 +71,7 @@ Extensions that fail to load 3 consecutive times are automatically disabled to p
 
 - Ed25519 private keys or seed phrases
 - XChaCha20-Poly1305 encryption keys
-- PAL/1.0 protocol internals
+- PAL/2.0 protocol internals
 - Raw BitTorrent/WebTorrent connections
 - Core config (identity, friends, servers)
 - Other extensions' data

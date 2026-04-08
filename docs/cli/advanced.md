@@ -92,17 +92,6 @@ pal unsubscribe <share-id>             # Unsubscribe
 pal subscriptions                      # List active subscriptions
 ```
 
-## pal folder-sync
-
-Bi-directional folder sync with auto-conflict resolution.
-
-```bash
-pal folder-sync add <local> <remote>   # Add sync pair
-pal folder-sync list                   # List sync pairs
-pal folder-sync remove <id>            # Remove sync pair
-pal folder-sync status                 # Show sync status
-```
-
 ## pal privacy
 
 Privacy controls.
@@ -172,7 +161,7 @@ pal completion fish > ~/.config/fish/completions/pal.fish
 
 ```bash
 pal share ./docs --with alice,bob,charlie
-pal pals add alice,bob,charlie
+pal pal add @alice,@bob,@charlie
 pal group add "Team" alice,bob,charlie
 pal revoke id1,id2,id3
 ```

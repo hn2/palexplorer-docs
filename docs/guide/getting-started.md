@@ -96,13 +96,13 @@ pal transfers resume <id>
 
 ```bash
 # Add by handle
-pal pals add alice
+pal pal add alice
 
 # Discover on LAN
 pal nearby
 
 # List all pals
-pal pals list
+pal pal list
 ```
 
 ## Connect to Discovery Network
@@ -117,5 +117,5 @@ This connects to discovery servers for handle resolution, online presence, and o
 ## Next Steps
 
 - [Core Concepts](/guide/core-concepts) — Identity, shares, permissions, encryption
-- [CLI Reference](/cli/) — All 100+ commands
+- [CLI Reference](/cli/) — All commands and subcommands
 - [Configuration](/config/) — Customize behavior
