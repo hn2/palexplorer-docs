@@ -67,9 +67,11 @@ Extensions are gated by subscription plan:
 
 | Tier | Requires | Examples |
 |------|----------|---------|
-| Free | Any plan | sync, chat, share-links, groups, discovery, audit |
-| Pro | Pro or above | vfs, explorer-integration, analytics, media-streaming |
-| Enterprise | Enterprise | networks, auth-sso, turn-relay |
+| Free | Any plan | analytics, auth-email, auth-oauth, discovery, email-notifications, explorer-integration, vfs |
+| Pro | Pro or above | teams, media-streaming, reporting-dashboard, transfer-analytics, webhook-integrations, relay-server, federation-registry |
+| Enterprise | Enterprise | sso-connector, scim-provisioning, enterprise-rbac, org-policy, advanced-audit, content-scanner, compliance bundles |
+
+See [Extensions](/extensions/) for the full list of all 36 extensions.
 
 ## Billing
 
