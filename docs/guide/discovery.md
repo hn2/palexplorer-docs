@@ -26,7 +26,7 @@ pal status
 pal server list
 ```
 
-Default: `138.2.142.188,92.5.46.86` (two servers in Frankfurt, IP-only — no DNS).
+Default: `141.147.60.209,92.5.46.86` (two servers in Frankfurt, IP-only — no DNS).
 
 Features:
 - `@handle` registration (challenge-response auth)

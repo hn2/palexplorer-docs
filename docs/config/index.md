@@ -27,7 +27,7 @@ pal config reset [key]       # Reset to default(s)
 | `bandwidth_cap` | `0` | Upload cap in KB/s (0 = unlimited) |
 | `bandwidth_up` | — | Upload limit |
 | `bandwidth_down` | — | Download limit |
-| `discovery_servers` | `138.2.142.188,92.5.46.86` | Discovery server IPs (comma-separated, no DNS) |
+| `discovery_servers` | `141.147.60.209,92.5.46.86` | Discovery server IPs (comma-separated, no DNS) |
 | `announce_interval` | `3600` | DHT announce interval (seconds) |
 | `dht_bootstrap` | Mainline defaults | Bootstrap DHT nodes |
 | `stunServers` | `stun:stun.l.google.com:19302` | STUN server list |
