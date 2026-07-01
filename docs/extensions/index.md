@@ -68,6 +68,8 @@ Requires an active Enterprise subscription. Contact [hello@palexplorer.com](mail
 | `@palexplorer/compliance-pci` | PCI DSS — card data detection, cardholder data environment enforcement | Available |
 | `@palexplorer/compliance-soc2` | SOC 2 Type II — continuous monitoring, access controls, change management, incident tracking | Available |
 
+> **Compliance bundles are policy-enforcement templates, not audited compliance guarantees.** Each bundle implements pattern-based detection and policy hooks for its regulation (see each extension's README) but does not by itself certify compliance — customers remain responsible for their own legal/audit review.
+
 ## Enable an Extension
 
 ```bash

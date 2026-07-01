@@ -1,6 +1,6 @@
 # CLI Reference
 
-The `pal` command-line tool provides 63 command groups with 100+ subcommands for managing shares, transfers, pals, sync, and more.
+The `pal` command-line tool provides 80+ command groups with 100+ subcommands for managing shares, transfers, pals, sync, and more.
 
 ## Installation
 
