@@ -1,0 +1,60 @@
+# Identity & Recovery
+
+## Creating an Identity
+
+```bash
+pal init "Alice"
+```
+
+This generates:
+- An **Ed25519 keypair** from a BIP-39 mnemonic (24 words, 256-bit entropy)
+- A **Curve25519 keypair** derived from the Ed25519 key (for key exchange)
+- A **device name** (defaults to your machine hostname)
+
+The private key is stored in your OS keystore:
+- **Windows/macOS**: Keytar (OS credential manager)
+- **Linux**: Encrypted file with machine-derived AES-256-GCM key
+
+## Recovery Phrase
+
+Your 24-word mnemonic is the **only way** to recover your identity. Palexplorer never stores it — it's shown once during setup.
+
+```bash
+pal recover "word1 word2 word3 ... word24"
+```
+
+## Handles
+
+Handles (e.g., `@alice`) are the recommended way to share your identity. They're provided by the Discovery extension and registered via challenge-response authentication with your Ed25519 key.
+
+```bash
+# Register a handle during setup (recommended)
+pal init            # prompts for @handle
+
+# Register or change handle later
+pal register alice
+
+# See your current identity
+pal whoami
+```
+
+Handles are optional — you can share your raw public key instead if you prefer to stay fully anonymous.
+
+## Guest Mode
+
+Guest login creates a temporary identity in memory — no keystore, no persistence:
+
+```bash
+pal login <handle>
+```
+
+Keys are wiped with `sodium_memzero()` on logout or exit.
+
+## Multi-Device
+
+Each device registers separately under the same handle. Devices are linked by the same Ed25519 public key:
+
+```bash
+pal device list
+pal device rename "Work Laptop"
+```
